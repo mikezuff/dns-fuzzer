@@ -28,6 +28,7 @@ fileRecordsCAA = []
 fileRecordsNULL = []
 fileRecordsAAAA = []
 fileRecordsNSEC = []
+fileRecoredsDNSKEY = []
 fileRecordsZone = []
 fileRecordsCNAME = []
 fileRecordsDNAME = []
@@ -37,6 +38,7 @@ fileRecordsAFSDB = []
 fileRecordsNAPTR = []
 fileRecordsSSHFP = []
 fileRecordsDHCID = []
+fileRecordsHTTPS = []
 fileRecordsEUI48 = []
 fileRecordsEUI64 = []
 
@@ -65,6 +67,7 @@ fileRecordsDict = {
         "NULL": fileRecordsNULL,
         "AAAA": fileRecordsAAAA,
         "NSEC": fileRecordsNSEC,
+        "DNSKEY": fileRecoredsDNSKEY,
         "ZONE": fileRecordsZone,
         "CNAME":    fileRecordsCNAME,
         "DNAME":    fileRecordsDNAME,
@@ -74,6 +77,7 @@ fileRecordsDict = {
         "NAPTR":    fileRecordsNAPTR,
         "SSHFP":    fileRecordsSSHFP,
         "DHCID":    fileRecordsDHCID,
+        "HTTPS":    fileRecordsHTTPS,
         "EUI48":    fileRecordsEUI48,
         "EUI64":    fileRecordsEUI64
         }
@@ -107,7 +111,9 @@ typeDict = {
         "DS":       43,
         "SSHFP":    44,
         "NSEC":     47,
+        "DNSKEY":   48,
         "DHCID":    49,
+        "HTTPS":    65,
         "EUI48":    108,
         "EUI64":    109,
         "IXFR":     251,
