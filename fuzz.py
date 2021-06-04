@@ -1058,8 +1058,11 @@ def fuzzing(conn):
                 packet += genCookie()
 
     # Send the query
-    print "Length of Packet: " + str(len(packet))           
-    serverSend(conn, packet)
+    if len(packet) < 21000:
+        print "Length of Packet: " + str(len(packet))           
+        serverSend(conn, packet)
+    else:
+        print "PACKET TOO LONG: " + str(len(packet))
 
 if __name__ == "__main__":
     setup()
